@@ -33,7 +33,7 @@ const cardHover = {
 export const About = () => {
   return (
     <section 
-      id="about" 
+      id="About" 
       className="max-w-screen-2xl container mx-auto px-4 md:px-20 py-20  bg-gradient-to-br from-gray-900 to-[#4a4168]"
     >
       <motion.div

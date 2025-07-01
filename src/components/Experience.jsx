@@ -52,7 +52,7 @@ const Experience = () => {
 
 
     
-     <div className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-10 md:my-20  bg-gradient-to-br from-gray-900 to-[#4a4168] '>
+     <div name='Experience' className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-10 md:my-20  bg-gradient-to-br from-gray-900 to-[#4a4168] '>
             <div className='mt-5 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white"'>
                <h1 className=' dark:text-white font-serif  text-3xl font-bold mb-5'>Experience</h1> 
               <ReactTyped

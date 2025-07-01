@@ -42,7 +42,7 @@ const iconHover = {
 const Home = () => {
   return (
     <>
-      <div className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-10 md:my-20  bg-gradient-to-br from-gray-900 to-[#4a4168]'>
+      <div name="Home" className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-10 md:my-20  bg-gradient-to-br from-gray-900 to-[#4a4168]'>
         <motion.div 
           className='flex flex-col md:flex-row items-center gap-8 md:gap-16'
           initial="hidden"

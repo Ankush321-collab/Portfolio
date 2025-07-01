@@ -3,6 +3,7 @@ import pic from '../../public/photo.avif';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
     const [menu, setMenu] = useState(false);
@@ -96,6 +97,7 @@ const Navbar = () => {
                         {/* Desktop navbar with animated underline */}
                         <nav className='hidden md:block'>
                             <ul className="flex space-x-6">
+
                                 {navItems.map((item) => (
                                     <motion.li 
                                         key={item.id} 
@@ -113,7 +115,15 @@ const Navbar = () => {
                                                       ${activeItem === item.id ? 'text-white' : 'text-gray-100 hover:text-teal-200'}`}
                                         >
                                             <span className="text-sm">{item.icon}</span>
-                                            {item.text}
+                                            <Link
+                                                to={item.text}
+                                                smooth={true}
+                                                duration={500}
+                                                offset={-70}
+                                                activeClass="active"
+                                            >
+                                                {item.text}
+                                            </Link>
                                         </motion.a>
                                         
                                         {activeItem === item.id && (
